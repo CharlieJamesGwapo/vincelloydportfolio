@@ -14,16 +14,16 @@ const Hero = () => {
     "Cinematic Storyteller"
   ], [])
 
+  const handleMouseMove = useCallback((e) => {
+    setMousePosition({ x: e.clientX, y: e.clientY })
+  }, [])
+
   useEffect(() => {
     setIsVisible(true)
     
-    const handleMouseMove = useCallback((e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY })
-    }, [])
-    
     window.addEventListener('mousemove', handleMouseMove)
     return () => window.removeEventListener('mousemove', handleMouseMove)
-  }, [])
+  }, [handleMouseMove])
 
   useEffect(() => {
     const currentFullText = texts[currentTextIndex]
