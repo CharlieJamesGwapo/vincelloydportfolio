@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     screens: {
       'xs': '320px',
@@ -18,6 +19,10 @@ export default {
       colors: {
         primary: '#3b82f6',
         secondary: '#8b5cf6',
+        dark: {
+          DEFAULT: '#0f172a',
+          light: '#1e293b',
+        },
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in',

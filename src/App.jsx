@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
-import Education from './components/Education'
-import Certificates from './components/Certificates'
+import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
@@ -37,8 +36,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Education />
-      <Certificates />
+      <Experience />
       <Projects />
       <Skills />
       <Contact />
@@ -48,7 +46,7 @@ function App() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300 z-50 animate-bounce"
+          className="fixed bottom-8 right-8 bg-gradient-to-r from-purple-600 to-pink-600 text-white p-3 rounded-full shadow-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 z-50 animate-bounce"
           aria-label="Scroll to top"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
