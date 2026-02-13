@@ -224,3 +224,4 @@ Your portfolio is production-ready and optimized for:
 - 🔍 SEO optimization
 
 **Deploy now and showcase your skills to the world!** 🌟
+# vincelloydportfolio
